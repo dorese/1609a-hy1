@@ -1,4 +1,76 @@
-* {
-    margin: 0px;
-    padding: 0px;
+@import"_minix.scss";
+@import"common.scss";
+.box {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: pxTorem(45px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    li {
+        list-style: none;
+        font-size: pxTorem(18px);
+        margin-left: pxTorem(5px);
+        margin-right: pxTorem(15px);
+        font-weight: bolder;
+    }
+    .red {
+        color: red;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: pxTorem(133px);
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    h3 {
+        margin-top: pxTorem(25px);
+        font-size: pxTorem(24px);
+        margin-bottom: pxTorem(15px);
+        margin-left: pxTorem(5px)
+    }
+    li {
+        width: 100%;
+        height: pxTorem(103px);
+        border-bottom: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        display: flex;
+        align-items: center;
+        .one {
+            width: pxTorem(85px);
+            height: pxTorem(70px);
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .two {
+            width: pxTorem(324px);
+            height: pxTorem(65px);
+            p {
+                font-size: pxTorem(16px);
+                padding-left: pxTorem(5px);
+                font-weight: bolder;
+            }
+            span {
+                font-size: pxTorem(14px);
+                color: rgb(80, 76, 76);
+                padding-left: pxTorem(5px);
+            }
+        }
+    }
 }
